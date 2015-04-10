@@ -1,0 +1,22 @@
+﻿<Window x:Class="LaunchRoulette.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lunch Rulette settings" Height="380" Width="512">
+    <Grid>
+        <Frame Content="Select competitors" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="158" Margin="10,33,0,0" VerticalAlignment="Top" Width="482"/>
+
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Settings" VerticalAlignment="Top" FontSize="15"/>
+        <Button x:Name="Active_SelectFileButton" Content="Browse..." HorizontalAlignment="Left" Margin="404,68,0,0" VerticalAlignment="Top" Width="75" Click="Active_SelectFileButton_Click"/>
+        <TextBox x:Name="Active_FilePathTextBox" HorizontalAlignment="Left" Height="20" Margin="18,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="386"/>
+        <Label Content="Select excel file with active competitor names" HorizontalAlignment="Left" Margin="18,45,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ViewActiveCompsButton" Content="View active comptetitors" HorizontalAlignment="Left" Margin="18,93,0,0" VerticalAlignment="Top" Width="129" Click="ViewActiveCompsButton_Click"/>
+        <Button x:Name="ViewExcludedCompsButton" Content="View excluded comptetitors" HorizontalAlignment="Left" Margin="18,161,0,0" VerticalAlignment="Top" Width="151" Click="ViewExcludedCompsButton_Click"/>
+        <Button x:Name="Excluded_SelectFileButton" Content="Browse..." HorizontalAlignment="Left" Margin="404,136,0,0" VerticalAlignment="Top" Width="75" Click="Excluded_SelectFileButton_Click"/>
+        <TextBox x:Name="Excluded_FilePathTextBox" HorizontalAlignment="Left" Height="20" Margin="18,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="386"/>
+        <Label Content="Select excel file with excluded competitor names" HorizontalAlignment="Left" Margin="18,113,0,0" VerticalAlignment="Top"/>
+
+
+
+    </Grid>
+</Window>
